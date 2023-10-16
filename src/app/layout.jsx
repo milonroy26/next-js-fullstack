@@ -1,7 +1,8 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "@/components/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Footer from "@/components/Footer";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <NextTopLoader
+          color="#2299DD"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+          easing="ease"
+          speed={200}
+        />
         <Header />
         {children}
         <Footer />

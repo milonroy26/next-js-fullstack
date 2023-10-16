@@ -1,14 +1,16 @@
-import React from "react";
-import AboutInfo from "../components/AboutPageCmp/AboutInfo";
-import Counter from "./Counter";
+import AboutInfo from "@/components/AboutPageCmp/AboutInfo";
+import Counter from "@/components/AboutPageCmp/Counter";
+import Team from "@/components/AboutPageCmp/Team";
 
 const page = () => {
   return (
     <>
-      {/* about info */}
+      {/* About info */}
       <AboutInfo />
       {/* Counter */}
       <Counter />
+      {/* Team */}
+      <Team />
     </>
   );
 };

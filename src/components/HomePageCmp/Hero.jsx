@@ -1,9 +1,13 @@
+"use client"
+import { Button } from "@material-tailwind/react";
+
 import React from "react";
 
 const Hero = () => {
   return (
     <section className="relative">
       <div
+      
         className="hidden lg:block absolute inset-0 w-1/2 ml-auto  z-0"
         style={{ zIndex: -1 }}
       />

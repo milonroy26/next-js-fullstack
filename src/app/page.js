@@ -1,8 +1,7 @@
-import React from "react";
-import Hero from "./components/HomePageCmp/Hero";
-import Feature from "./components/HomePageCmp/Feature";
-import HowItWork from "./components/HomePageCmp/HowItWork";
-import NewsLetter from "./components/NewsLetter";
+import Feature from "@/components/HomePageCmp/Feature";
+import Hero from "@/components/HomePageCmp/Hero";
+import HowItWork from "@/components/HomePageCmp/HowItWork";
+import NewsLetter from "@/components/NewsLetter";
 
 const page = () => {
   return (
@@ -15,6 +14,7 @@ const page = () => {
       <HowItWork />
       {/* NewsLetter Section */}
       <NewsLetter />
+
     </>
   );
 };
