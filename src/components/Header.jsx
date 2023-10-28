@@ -1,7 +1,10 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Header = () => {
+  const currentRoute  =  usePathname();
   return (
     <section>
       <div className="container px-4 mx-auto">
