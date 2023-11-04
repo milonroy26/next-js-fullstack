@@ -14,7 +14,6 @@ const readBlog = async () => {
 };
 export default async function Page() {
   const blog = await readBlog();
-  console.log(blog);
   return (
     <div>
       <BlogHome blog={blog} />

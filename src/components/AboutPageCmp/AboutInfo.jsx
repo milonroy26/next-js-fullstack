@@ -2,15 +2,15 @@ import React from "react";
 
 const AboutInfo = () => {
   return (
-    <section className="container p-4 pt-20 pb-20 lg:pb-12">
-      <div className="grid grid-cols-12 gap-[30px]">
+    <section className="container p-4 pt-10 pb-20 lg:pb-12">
+      <div className="grid grid-cols-12 gap-[30px] place-items-center">
         <div className="col-span-6 relative w-full  px-4 ">
-          <div className="  ">
+          <div className="p-16">
             <img className="" src="images/metis-dashboard-square.png" alt="" />
           </div>
         </div>
         <div className="col-span-6 ">
-          <div className="  pt-8 lg:pt-0 max-w-2xl lg:max-w-lg">
+          <div className="  pt-8 lg:pt-0 max-w-2xl lg:max-w-lg space-y-10">
             <h2 className="text-3xl md:text-4xl mb-4 font-bold font-heading">
               <span>Make your</span>
               <span className="text-blue-600">life easier</span>
