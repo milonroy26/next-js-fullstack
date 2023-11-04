@@ -1,19 +1,18 @@
 import { PrismaClient } from "@prisma/client";
 import { NextResponse } from "next/server";
 
-export async function PUT(req, res) {
+export async function POST(req, res) {
   try {
     let { searchParams } = new URL(req.url);
     const id = searchParams.get("id");
+
+    const reqBody = await req.json();
     const prisma = new PrismaClient();
     const result = await prisma.service.update({
       where: {
         id: parseInt(id),
       },
-      data: {
-        title: "Weekly Sales",
-        imgCDN: "http://localhost:3000/images/advertisement.png",
-      },
+      data: reqBody,
     });
     return NextResponse.json({ status: "success", data: result });
   } catch (err) {

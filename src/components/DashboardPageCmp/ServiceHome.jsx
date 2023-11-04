@@ -1,7 +1,10 @@
 "use client";
+import axios from "axios";
 import { useRef } from "react";
 import { Toaster } from "react-hot-toast";
 import { SuccessToast, ErrorToast } from "@/utility/FormHelper";
+import { DeleteAlertServicePost } from "@/utility/DeleteAlert";
+import { ServiceUpdateDialog } from "@/components/DashboardPageCmp/ServiceUpdateDialog";
 
 const ServiceHome = ({ service }) => {
   let titleRef,
@@ -24,6 +27,11 @@ const ServiceHome = ({ service }) => {
     } else {
       ErrorToast("Something went wrong!");
     }
+  };
+
+  //   Delate Service
+  const deleteServiceControl = (id) => {
+    DeleteAlertServicePost(id);
   };
   return (
     <main>
@@ -129,7 +137,7 @@ const ServiceHome = ({ service }) => {
                       <span
                         className="cursor-pointer"
                         x-data="{ tooltip: 'Delete' }"
-                        //   onClick={() => deleteServiceControl(item.id)}
+                        onClick={() => deleteServiceControl(item.id)}
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +155,7 @@ const ServiceHome = ({ service }) => {
                           />
                         </svg>
                       </span>
-                      {/* <ServiceUpdateDialog id={item.id} /> */}
+                      <ServiceUpdateDialog id={item.id} />
                     </div>
                   </td>
                 </tr>
