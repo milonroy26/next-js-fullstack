@@ -1,11 +1,23 @@
-import React from "react";
+import BlogHome from "@/components/DashboardPageCmp/BlogHome";
 
-const page = () => {
-  return (
-    <>
-      <h1>blog</h1>
-    </>
-  );
+const readBlog = async () => {
+  const res = await fetch("http://localhost:3000/api/dashboard/blog/read", {
+    cache: "no-store",
+  });
+  const data = await res.json();
+
+  if (res.ok) {
+    return data["data"];
+  } else {
+    return [];
+  }
 };
-
-export default page;
+export default async function Page() {
+  const blog = await readBlog();
+  console.log(blog);
+  return (
+    <div>
+      <BlogHome blog={blog} />
+    </div>
+  );
+}

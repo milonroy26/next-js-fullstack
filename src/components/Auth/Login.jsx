@@ -33,7 +33,7 @@ const Login = () => {
       });
       if (res.data.status === "success") {
         SuccessToast("Login Success!");
-        router.replace("/");
+        router.replace("/dashboard");
       } else {
         ErrorToast("Email or Password Wrong");
       }
