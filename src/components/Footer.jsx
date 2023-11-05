@@ -149,22 +149,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="lg:hidden text-center">
-              <p className="text-xs text-gray-400">
-                © 2020. All rights reserved.
-              </p>
-              <div className="-mx-2 mt-4">
-                <a className="inline-block px-2" href="#">
-                  <img src="metis-assets/icons/facebook-blue.svg" alt="" />
-                </a>
-                <a className="inline-block px-2" href="#">
-                  <img src="metis-assets/icons/twitter-blue.svg" alt="" />
-                </a>
-                <a className="inline-block px-2" href="#">
-                  <img src="metis-assets/icons/instagram-blue.svg" alt="" />
-                </a>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>

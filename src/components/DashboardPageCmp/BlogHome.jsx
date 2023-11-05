@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 import { DeleteAlertBlogPost } from "@/utility/DeleteAlert";
 import { BlogUpdateDialog } from "@/components/DashboardPageCmp/BlogUpdateDialog";
 
-const BlogHome = ({ blog }) => {
+const BlogHome = ({blog}) => {
   let titleRef,
     imgCDNRef,
     desRef = useRef();

@@ -7,7 +7,7 @@ const SideBar = () => {
         <div className="px-3 py-3 lg:px-5 lg:pl-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-start">
-              <a href="https://flowbite.com" className="flex ml-2 md:mr-24">
+              <a href="/" className="flex ml-2 md:mr-24">
                 <img
                   src="/images/logo.svg"
                   className="h-8 mr-3"

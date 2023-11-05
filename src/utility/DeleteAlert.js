@@ -2,7 +2,6 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { ErrorToast, SuccessToast } from "./FormHelper";
 
-import { delete_blog__Request__API, delete_service__Request__API } from "./api";
 
 export const DeleteAlertBlogPost = (id) => {
   return Swal.fire({

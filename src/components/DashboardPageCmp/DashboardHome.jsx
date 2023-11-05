@@ -1,4 +1,3 @@
-import React from "react";
 
 const DashboardHome = ({ blog, service }) => {
   return (
@@ -39,7 +38,7 @@ const DashboardHome = ({ blog, service }) => {
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100 border-t border-gray-100">
-                          {blog.map((item, index) => (
+                          {blog?.map((item, index) => (
                             <tr className="hover:bg-gray-50" key={index}>
                               <td className="px-6 py-4">{item.title}</td>
                               <td className="px-6 py-4">
@@ -93,7 +92,7 @@ const DashboardHome = ({ blog, service }) => {
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-gray-100 border-t border-gray-100">
-                        {service.map((item, index) => (
+                        {service?.map((item, index) => (
                           <tr className="hover:bg-gray-50" key={index}>
                             <td className="px-6 py-4">{item.title}</td>
                             <td className="px-6 py-4">

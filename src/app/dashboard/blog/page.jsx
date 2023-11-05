@@ -16,7 +16,7 @@ export default async function Page() {
   const blog = await readBlog();
   return (
     <div>
-      <BlogHome blog={blog} />
+      <BlogHome blog={blog}/>
     </div>
   );
 }
